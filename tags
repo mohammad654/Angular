@@ -1,0 +1,12 @@
+                                Angular 
+                                
+npm install -g @angular/cli
+ng version
+ng new my-first-project
+cd my-first-project
+ng serve
+
+cd my-first-project
+ng generate component app-test  
+ng g c Course
+ng g s mail

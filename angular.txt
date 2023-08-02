@@ -1,0 +1,77 @@
+What are the advantages of using Angular?
+There is certainly a whole range of advantages that speak for the use of Angular. The main advantages are as follows:
+
+1. Custom and reusable components
+Angular allows developers to create their own components. These components can be reused, combined and nested, providing a construction kit for building the application.
+
+2. Use of TypeScript’s data types
+By using Angular, users can effortlessly call data from TypeScript code on the web page and respond to appropriate user input without having to manually write any code. This enables the integration of third-party libraries without implementing another intermediate layer (glue code).
+
+3. Productivity and code consistency
+The entire framework is based on components and services, which can be thought of as building blocks. The application can be developed faster and more consistently if you write the components according to the guidelines and code structures or create a class of service.
+
+4. Easy testing
+Angular can be used to perform unit testing and end-to-end testing of the application. The framework is suitable for performing both simple testing for unit testing and end-to-end testing. The number of developers/users does not matter. It is possible to test any part of your application.
+
+5. Code reduction and good maintainability
+By using TypeScript, Angular applications get an object-oriented architecture, which in turn leads to a clear and ultimately well-maintainable source code. In addition, Angular eliminates the need for much of the code that you would normally write. In addition, the source code becomes significantly smaller. The reduction of code is justified by the automation of standard tasks. Angular applications gain an object-oriented architecture through the use of TypeScript. This in turn leads to a clear and ultimately easily maintainable source code.
+
+6. High compatibility
+Angular is cross-platform and compatible with all major browsers such as Chrome or Firefox. In order to be able to develop comparatively easy, large and small applications with modern web technologies, companies need appropriate resources and reliable tools. The JavaScript ecosystem is in a constant state of flux. New frameworks appear daily and disappear just as quickly. Despite all this, Angular seems to be a tool that companies can rely on.
+
+
+https://www.devoteam.com/expert-view/angular-front-end-framework/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
