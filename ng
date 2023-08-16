@@ -1,0 +1,14 @@
+Component Interaction:
+Angular applications are typically organized into components, which can communicate with each other through various methods. This interaction can include passing data between parent and child components using input properties (@Input) and emitting events from child to parent components using output properties (@Output). This is a fundamental concept in Angular development.
+
+Service Communication:
+Angular services provide a way to share data and functionality across different parts of an application. Services can be used to centralize data management and communication between components, facilitating a linear flow of data and logic throughout the application.
+
+Routing and Navigation:
+Angular's routing module allows you to set up navigation between different views (components) in a linear manner. You can define routes, configure navigation paths, and create links to navigate through your application's different sections.
+
+Data Binding:
+Data binding in Angular allows you to establish a connection between the UI and application logic. It ensures that changes in the application state are reflected in the UI and vice versa, creating a linear relationship between data and its representation.
+
+Observables and RxJS:
+Angular commonly uses RxJS observables to handle asynchronous operations. Observables provide a way to work with asynchronous data streams in a linear and manageable manner.
