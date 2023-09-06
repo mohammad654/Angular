@@ -27,6 +27,9 @@ ng g d input-format
 
 
 npm install bootstrap --save
+npm install bootstrap-icons --save
+npm install bootstrap-icons
+npm install @ng-bootstrap/ng-bootstrap
 @import "~bootstrap/dist/css/bootstrap.css"
  "src/styles.css",
  "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -34,9 +37,7 @@ npm install bootstrap --save
  "node_modules/bootstrap/scss/bootstrap.scss",
  "node_modules/bootstrap-icons/font/bootstrap-icons.css"
 
-npm install bootstrap-icons --save
-npm install bootstrap-icons
-npm install @ng-bootstrap/ng-bootstrap
+
 
 
 
@@ -102,5 +103,18 @@ Redux
 ng add @ngrx/store
 npm install @ngrx/store @ngrx/effects
 npm install @ngrx/store @ngrx/effects @ngrx/entity @ngrx/store-devtools
+
+
+
+material
+ng add @angular/material
+npm install --save @angular/material @angular/cdk
+npm install --save @angular/animations
+npm install --save hammerjs
+in css @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+
 
 

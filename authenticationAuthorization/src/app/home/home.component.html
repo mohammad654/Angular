@@ -1,0 +1,8 @@
+
+
+<h1 class="bg-info" *ngIf="currentUser">Welcome {{currentUser.name}}</h1>
+
+
+  <button type="button" routerLink="login"  class="btn btn-primary" *ngIf="!currentUser">Login</button>
+  <hr>
+  <button type="button" (click)="logout()"  *ngIf="currentUser" class="btn btn-danger">Logout</button>

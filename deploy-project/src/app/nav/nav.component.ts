@@ -17,5 +17,5 @@ toggleNavbar() {
   this.isNavbarOpen = !this.isNavbarOpen;
 }
 
-navBackgroundColor=environment.navBarBackgroundColor;
+// navBackgroundColor=environment.navBarBackgroundColor;
 }

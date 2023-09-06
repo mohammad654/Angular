@@ -1,2 +1,51 @@
 
 <h1 class="text-center bg-info px-4">Home</h1>
+
+<div [textContent]="title" [class.bg-danger]="title"></div>
+<hr>
+<input #email type="text" (change)="email"  placeholder="Type something">
+<hr>
+<div  [style.backgroundColor]="backGround">{{email.value}}</div>
+
+
+<hr>
+
+<input #inputField placeholder="Type something"><br>
+<button (click)="onButtonClick(inputField.value)">Get Value</button>
+
+<h3>{{myInput}} </h3>
+<h3> {{input}}</h3>
+
+
+<hr>
+
+
+<hr>
+<ng-container *ngIf="directive; else elseBlock">
+   Content to show when condition is true
+</ng-container>
+
+<ng-template #elseBlock>
+   Content to show when condition is false
+</ng-template>
+<hr>
+<div class="container" *ngIf="directive;then ifBlock else  elseBlock">
+
+</div>
+<ng-template  #ifBlock>
+   Content to show when condition is true
+</ng-template >
+
+<ng-template #elseBlock>
+   Content to show when condition is false
+</ng-template>
+
+<h5 [hidden]="isHidden" >Content to be conditionally hidden </h5>
+<hr>
+<ul>
+  <li  *ngFor="let user of users; trackBy: userByName">
+    {{user.name}} -> {{user.score}}
+  </li>
+</ul>
+
+<div> Safe Navigation(Traversal ) Operator ?</div>

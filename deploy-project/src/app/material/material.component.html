@@ -1,0 +1,65 @@
+
+
+<div class="container">
+<p>material works!</p>
+<mat-checkbox [checked]="isChecked" #showDetails
+value=""(change)="onChange($event)">Check me!</mat-checkbox>
+<div *ngIf="showDetails.checked">Show details.....</div>
+<!-- ------------------------------------------ -->
+<mat-radio-group aria-label="Select an option">
+  <mat-radio-button value="1">Option 1</mat-radio-button>
+  <mat-radio-button [checked]="isChecked" value="2">Option 2</mat-radio-button>
+</mat-radio-group>
+<!-- ------------------------------------------ -->
+
+  <mat-select multiple class="form-select" [(ngModel)]="selectedLanguages">
+    <mat-option class="form-select" *ngFor="let topping of toppingList" [value]="topping.id">{{topping.language}}</mat-option>
+  </mat-select>
+<!-- Input -->
+
+  <mat-form-field class="example-form-field mt-5" >
+  <mat-label>Clearable input</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
+  <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+<br>
+<!-- date -->
+<mat-form-field>
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<br>
+<!-- button -->
+
+<button mat-fab extended>
+  <mat-icon>home</mat-icon>
+  Home
+</button>
+  <a mat-fab matTooltip="Link" routerLink="." aria-label="Example fab with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </a>
+  <button color="primary" extended  mat-fab   >
+  Home
+</button>
+
+<!-- <mat-spinner mode="indeterminate"></mat-spinner> -->
+
+<mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+
+  <button mat-icon-button [matTooltip]="tooltipText" aria-label="Tooltip">
+  <mat-icon>info</mat-icon>
+</button>
+<mat-tab-group>
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+<!--  -->
+
+</div>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/ProductManagement" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/angular-fundamentals/07/demos/1 - before" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/angular-fundamentals/08/demos/1 - before" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fundamentals" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/practise" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/template-drivenForms" vcs="Git" />
+  </component>
+</project>

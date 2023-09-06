@@ -1,0 +1,21 @@
+<div class="container">
+  <form  >
+
+    <div class="mb-3">
+      <label class="form-label">username</label>
+      <input ngModel name="username" minlength="2" #username="ngModel" (change)="onChange(username)"  required type="text" class="form-control" />
+      <div class="alert alert-danger" *ngIf="username.touched&&!username.valid">
+       <div  *ngIf="username?.errors?.['required']">username is required</div>
+       <div  *ngIf="username?.errors?.['minlength']">username is 2 </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input  type="password" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary form-control">submit</button>
+    </div>
+  </form>
+</div>

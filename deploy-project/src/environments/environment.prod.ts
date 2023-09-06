@@ -3,5 +3,5 @@
 
 export const environment = {
   production: true,
-    navBarBackgroundColor:'bg-info'
+//     navBarBackgroundColor:'bg-info'
 };

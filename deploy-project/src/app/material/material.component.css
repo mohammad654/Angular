@@ -1,0 +1,13 @@
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+  margin-left: 16px;
+}
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
+}
+.example-form-field {
+  width: 200px;
+}

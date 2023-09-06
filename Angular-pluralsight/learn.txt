@@ -1,0 +1,101 @@
+
+npm install bootstrap@5.3.1
+npm install bootstrap font-awesome
+
+
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+npm install @angular/cli -g
+ng g m  products  -m app
+
+ng new ngtest --defaults --skip-install
+ng g c pet -st --flat --prefix my
+ng generate component pet --inline-template --inline-style =ng g c pet –t -s
+
+npm install -g source-map-explorer
+npm install  source-map-explorer --save-dev
+ng build --prod
+ng test --code-coverage
+
+
+ng g --help
+ng g application  help-area
+ng generate library myLab
+
+
+Toastr is a JavaScript library which is used to create a notification popup.
+npm install ngx-toastr --save
+npm install @angular/animations --save
+@import 'ngx-toastr/toastr';
+ "node_modules/ngx-toastr/toastr.css" // try adding '../' if you're using angular cli before 6
+
+
+
+
+npm i angular-in-memory-web-api
+npm install angular-in-memory-web-api --save-dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

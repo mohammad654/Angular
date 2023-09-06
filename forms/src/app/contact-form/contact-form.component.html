@@ -1,0 +1,70 @@
+<h1 class="text-center mt-3">{{title}}</h1>
+
+<!--<p>contact-form works!</p>-->
+<!--<h1 class="bg-info text-center">{{title}}</h1>-->
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="form-group container mt-5">
+    <div ngModelGroup="contact" #contact="ngModelGroup" (change)="submitGr(contact)">
+
+      <div class="mb-3">
+        <label for="firstName" class="form-label">First name</label>
+        <input type="text" class="form-control"
+               id="firstName" placeholder="First name"
+               required minlength="2" maxlength="10" pattern=""
+               ngModel name="firstName"
+               #firstNameReTongMo="ngModel"
+               (change)="log(firstNameReTongMo)">
+        <div class="alert alert-danger" *ngIf="firstNameReTongMo.touched && !firstNameReTongMo.valid">
+          <div *ngIf="firstNameReTongMo.errors?.['required']">First name is required.</div>
+          <div *ngIf="firstNameReTongMo.errors?.['minlength']">First name should be minimum {{firstNameReTongMo.errors?.['minlength'].requiredLength}} characters.</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea class="form-control" id="comment" rows="3"
+                  required minlength="5"
+                  ngModel name="comment"
+                  #commentReTongMo="ngModel"
+        ></textarea>
+        <div class="alert alert-danger" *ngIf="commentReTongMo.touched && !commentReTongMo.valid">
+          <div *ngIf="commentReTongMo.errors?.['required']">Comment is required.</div>
+          <div *ngIf="commentReTongMo.errors?.['minlength']">Comment should be minimum {{commentReTongMo.errors?.['minlength'].requiredLength}} characters.</div>
+        </div>
+
+      </div>
+
+      <div class="form-check my-3">
+        <label class="form-check-label" >checkbox</label>
+        <input class="form-check-input" type="checkbox" id="flexCheck"
+        ngModel name="isSubscribed"
+        >
+      </div>
+
+      <div class="form-check mb-3"  *ngFor="let item of selectInfo">
+        <label class="form-check-label" for="radio">{{ item.name }}</label>
+        <input class="form-check-input" type="radio" id="radio" [value]="item.name"
+               ngModel name="isAdmin"
+        >
+      </div>
+
+
+      <div class="form-group mb-5">
+        <label for="selectOption">Works with selects</label>
+        <select class="form-select"  ngModel name="selectOption" id="selectOption" >
+          <option *ngFor="let item of selectInfo" [ngValue]="item">{{ item.name }}</option>
+        </select>
+      </div>
+
+
+
+    </div>
+
+
+      <button class="btn btn-primary px-5" [disabled]="!f.valid">add comment</button>
+
+  </div>
+  <p class="mt-5">{{f.value| json}}</p>
+</form>
+
+

@@ -1,0 +1,24 @@
+<div class="container">
+<div class="fullscreen-spinner" *ngIf="spinnerVisible">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+<button (click)="showPosts()" type="button" class="btn btn-primary w-25 mt-5" #show
+       >{{ isShowPosts ? 'Hide' : 'Show' }}</button>
+
+<button (click)="createPost(post)" type="button" class="btn btn-success w-25 mt-5 ms-5">Create post</button>
+<input #post type="text" class="form-control mt-4" placeholder="create a post">
+
+
+<div class="row">
+    <div class="border list-group m-2 p-2" style="width: 18rem;" *ngFor="let post of posts">
+            <h5 class="list-group-item">userId: {{post.userId}}</h5>
+            <h5 class="list-group-item">ID: {{post.id}}</h5>
+            <p class="">Title : {{post.title}}</p>
+            <!-- <p class="card-text">Body : {{post.body}}</p> -->
+            <button (click)="updatePosts(post)" type="submit" class="btn btn-primary btn-sm card-text ">update post</button>
+            <button (click)="deletePosts(post)" type="submit" class="btn btn-danger btn-sm card-text mt-2 ">delete post</button>
+            <a  [routerLink]="['info/',post.id,post.title]" class="btn btn-success btn-sm card-text mt-2 ">post info</a>
+    </div> 
+</div> 
+</div>

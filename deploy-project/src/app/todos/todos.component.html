@@ -1,0 +1,19 @@
+
+<h1 class="text-center bg-info px-4">Todos</h1>
+<div class="container">
+
+  <input #itemInput
+         class="form-control"
+         (keyup.enter)="addItem(itemInput)">
+
+  <div *ngIf="items" class="list-group mt-3 " >
+    <button type="button"
+            @fade     @slide
+            *ngFor="let item of items"
+            (click)="removeItem(item)"
+            class="list-group-item mt-2"
+    >{{ item }}</button>
+  </div>
+</div>
+
+

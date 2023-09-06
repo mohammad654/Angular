@@ -1,0 +1,19 @@
+
+<ng-container *ngIf="photos">
+<h2 class="text-center text-info ">{{title}}</h2>
+</ng-container>
+
+<ng-container *ngIf="photos" class="row mx-4">
+
+  <div class="col-md-3 mb-3 container">
+    <div class="card" >
+      <img src="{{photos[id].url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ID: {{photos[id].id}}</h5>
+        <p class="card-text">Title: {{photos[id].title}}</p>
+        <a  routerLink="/photos"  class="btn btn-primary w-100">Back</a>
+      </div>
+    </div>
+  </div>
+
+</ng-container>
